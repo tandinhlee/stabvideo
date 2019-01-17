@@ -1,0 +1,6 @@
+framework module Pods_stabvideoTests {
+  umbrella header "Pods-stabvideoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

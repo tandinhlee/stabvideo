@@ -14,6 +14,10 @@
 		0D8352B221F14A8C00CCDD1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8352B021F14A8C00CCDD1F /* LaunchScreen.storyboard */; };
 		0D8352BD21F14A8C00CCDD1F /* stabvideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8352BC21F14A8C00CCDD1F /* stabvideoTests.swift */; };
 		0D8352C821F14A8C00CCDD1F /* stabvideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8352C721F14A8C00CCDD1F /* stabvideoUITests.swift */; };
+		0D8352D621F14C6100CCDD1F /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8352D521F14C6100CCDD1F /* EditorViewController.swift */; };
+		87AF4C3F66129FAB09AECC14 /* Pods_stabvideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E40C7F63943223959439B6 /* Pods_stabvideo.framework */; };
+		93DF99C4676507ED84B4D2C3 /* Pods_stabvideoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B203DE5E75AF8513A6B0497 /* Pods_stabvideoUITests.framework */; };
+		E190DF5A35C54BC3F2AFDC3B /* Pods_stabvideoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A82185EA30D9E406BFF979 /* Pods_stabvideoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BFCE0549CF9C90AC57D1264 /* Pods-stabvideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stabvideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-stabvideo/Pods-stabvideo.release.xcconfig"; sourceTree = "<group>"; };
 		0D8352A421F14A8B00CCDD1F /* stabvideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stabvideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8352A721F14A8B00CCDD1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D8352A921F14A8B00CCDD1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,15 @@
 		0D8352C321F14A8C00CCDD1F /* stabvideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stabvideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8352C721F14A8C00CCDD1F /* stabvideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stabvideoUITests.swift; sourceTree = "<group>"; };
 		0D8352C921F14A8C00CCDD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D8352D521F14C6100CCDD1F /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
+		1B203DE5E75AF8513A6B0497 /* Pods_stabvideoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stabvideoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		204AE37008C9AE9661CA306C /* Pods-stabvideoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stabvideoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-stabvideoUITests/Pods-stabvideoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6DA38837717C97ADF9B0623D /* Pods-stabvideoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stabvideoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-stabvideoTests/Pods-stabvideoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F1BA64FE44A84E7CB4713D8 /* Pods-stabvideoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stabvideoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stabvideoUITests/Pods-stabvideoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2A82185EA30D9E406BFF979 /* Pods_stabvideoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stabvideoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEAA1CB79A06B274AB51C6E /* Pods-stabvideoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stabvideoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stabvideoTests/Pods-stabvideoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0C6E07AF2120B04C8F6CECF /* Pods-stabvideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stabvideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stabvideo/Pods-stabvideo.debug.xcconfig"; sourceTree = "<group>"; };
+		D6E40C7F63943223959439B6 /* Pods_stabvideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stabvideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87AF4C3F66129FAB09AECC14 /* Pods_stabvideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E190DF5A35C54BC3F2AFDC3B /* Pods_stabvideoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DF99C4676507ED84B4D2C3 /* Pods_stabvideoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 				0D8352BB21F14A8C00CCDD1F /* stabvideoTests */,
 				0D8352C621F14A8C00CCDD1F /* stabvideoUITests */,
 				0D8352A521F14A8B00CCDD1F /* Products */,
+				BC01EDE58044079C3622C64F /* Pods */,
+				743F4B4AF0E57EBA975C1B60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +122,7 @@
 				0D8352AE21F14A8C00CCDD1F /* Assets.xcassets */,
 				0D8352B021F14A8C00CCDD1F /* LaunchScreen.storyboard */,
 				0D8352B321F14A8C00CCDD1F /* Info.plist */,
+				0D8352D521F14C6100CCDD1F /* EditorViewController.swift */,
 			);
 			path = stabvideo;
 			sourceTree = "<group>";
@@ -125,6 +145,29 @@
 			path = stabvideoUITests;
 			sourceTree = "<group>";
 		};
+		743F4B4AF0E57EBA975C1B60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6E40C7F63943223959439B6 /* Pods_stabvideo.framework */,
+				A2A82185EA30D9E406BFF979 /* Pods_stabvideoTests.framework */,
+				1B203DE5E75AF8513A6B0497 /* Pods_stabvideoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC01EDE58044079C3622C64F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0C6E07AF2120B04C8F6CECF /* Pods-stabvideo.debug.xcconfig */,
+				0BFCE0549CF9C90AC57D1264 /* Pods-stabvideo.release.xcconfig */,
+				ADEAA1CB79A06B274AB51C6E /* Pods-stabvideoTests.debug.xcconfig */,
+				6DA38837717C97ADF9B0623D /* Pods-stabvideoTests.release.xcconfig */,
+				6F1BA64FE44A84E7CB4713D8 /* Pods-stabvideoUITests.debug.xcconfig */,
+				204AE37008C9AE9661CA306C /* Pods-stabvideoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D8352CC21F14A8C00CCDD1F /* Build configuration list for PBXNativeTarget "stabvideo" */;
 			buildPhases = (
+				4B8AD7BE1C0923E747AD2FE5 /* [CP] Check Pods Manifest.lock */,
 				0D8352A021F14A8B00CCDD1F /* Sources */,
 				0D8352A121F14A8B00CCDD1F /* Frameworks */,
 				0D8352A221F14A8B00CCDD1F /* Resources */,
@@ -149,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D8352CF21F14A8C00CCDD1F /* Build configuration list for PBXNativeTarget "stabvideoTests" */;
 			buildPhases = (
+				63F0D5D4161BD84E0017EE9B /* [CP] Check Pods Manifest.lock */,
 				0D8352B421F14A8C00CCDD1F /* Sources */,
 				0D8352B521F14A8C00CCDD1F /* Frameworks */,
 				0D8352B621F14A8C00CCDD1F /* Resources */,
@@ -167,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D8352D221F14A8C00CCDD1F /* Build configuration list for PBXNativeTarget "stabvideoUITests" */;
 			buildPhases = (
+				3C09D0168CAAABA7CC3DC6B2 /* [CP] Check Pods Manifest.lock */,
 				0D8352BF21F14A8C00CCDD1F /* Sources */,
 				0D8352C021F14A8C00CCDD1F /* Frameworks */,
 				0D8352C121F14A8C00CCDD1F /* Resources */,
@@ -251,12 +297,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C09D0168CAAABA7CC3DC6B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stabvideoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B8AD7BE1C0923E747AD2FE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stabvideo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63F0D5D4161BD84E0017EE9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stabvideoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D8352A021F14A8B00CCDD1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0D8352AA21F14A8B00CCDD1F /* ViewController.swift in Sources */,
+				0D8352D621F14C6100CCDD1F /* EditorViewController.swift in Sources */,
 				0D8352A821F14A8B00CCDD1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +546,7 @@
 		};
 		0D8352CD21F14A8C00CCDD1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C6E07AF2120B04C8F6CECF /* Pods-stabvideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +564,7 @@
 		};
 		0D8352CE21F14A8C00CCDD1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BFCE0549CF9C90AC57D1264 /* Pods-stabvideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +582,7 @@
 		};
 		0D8352D021F14A8C00CCDD1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADEAA1CB79A06B274AB51C6E /* Pods-stabvideoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +603,7 @@
 		};
 		0D8352D121F14A8C00CCDD1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DA38837717C97ADF9B0623D /* Pods-stabvideoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +624,7 @@
 		};
 		0D8352D321F14A8C00CCDD1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F1BA64FE44A84E7CB4713D8 /* Pods-stabvideoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +644,7 @@
 		};
 		0D8352D421F14A8C00CCDD1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204AE37008C9AE9661CA306C /* Pods-stabvideoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
