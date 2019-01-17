@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D8352A821F14A8B00CCDD1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8352A721F14A8B00CCDD1F /* AppDelegate.swift */; };
+		0D8352AA21F14A8B00CCDD1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8352A921F14A8B00CCDD1F /* ViewController.swift */; };
+		0D8352AD21F14A8B00CCDD1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8352AB21F14A8B00CCDD1F /* Main.storyboard */; };
+		0D8352AF21F14A8C00CCDD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8352AE21F14A8C00CCDD1F /* Assets.xcassets */; };
+		0D8352B221F14A8C00CCDD1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8352B021F14A8C00CCDD1F /* LaunchScreen.storyboard */; };
+		0D8352BD21F14A8C00CCDD1F /* stabvideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8352BC21F14A8C00CCDD1F /* stabvideoTests.swift */; };
+		0D8352C821F14A8C00CCDD1F /* stabvideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8352C721F14A8C00CCDD1F /* stabvideoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D8352B921F14A8C00CCDD1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D83529C21F14A8B00CCDD1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D8352A321F14A8B00CCDD1F;
+			remoteInfo = stabvideo;
+		};
+		0D8352C421F14A8C00CCDD1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D83529C21F14A8B00CCDD1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D8352A321F14A8B00CCDD1F;
+			remoteInfo = stabvideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D8352A421F14A8B00CCDD1F /* stabvideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stabvideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D8352A721F14A8B00CCDD1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D8352A921F14A8B00CCDD1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D8352AC21F14A8B00CCDD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D8352AE21F14A8C00CCDD1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D8352B121F14A8C00CCDD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D8352B321F14A8C00CCDD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D8352B821F14A8C00CCDD1F /* stabvideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stabvideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D8352BC21F14A8C00CCDD1F /* stabvideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stabvideoTests.swift; sourceTree = "<group>"; };
+		0D8352BE21F14A8C00CCDD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D8352C321F14A8C00CCDD1F /* stabvideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stabvideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D8352C721F14A8C00CCDD1F /* stabvideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stabvideoUITests.swift; sourceTree = "<group>"; };
+		0D8352C921F14A8C00CCDD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D8352A121F14A8B00CCDD1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D8352B521F14A8C00CCDD1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D8352C021F14A8C00CCDD1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D83529B21F14A8B00CCDD1F = {
+			isa = PBXGroup;
+			children = (
+				0D8352A621F14A8B00CCDD1F /* stabvideo */,
+				0D8352BB21F14A8C00CCDD1F /* stabvideoTests */,
+				0D8352C621F14A8C00CCDD1F /* stabvideoUITests */,
+				0D8352A521F14A8B00CCDD1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D8352A521F14A8B00CCDD1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D8352A421F14A8B00CCDD1F /* stabvideo.app */,
+				0D8352B821F14A8C00CCDD1F /* stabvideoTests.xctest */,
+				0D8352C321F14A8C00CCDD1F /* stabvideoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D8352A621F14A8B00CCDD1F /* stabvideo */ = {
+			isa = PBXGroup;
+			children = (
+				0D8352A721F14A8B00CCDD1F /* AppDelegate.swift */,
+				0D8352A921F14A8B00CCDD1F /* ViewController.swift */,
+				0D8352AB21F14A8B00CCDD1F /* Main.storyboard */,
+				0D8352AE21F14A8C00CCDD1F /* Assets.xcassets */,
+				0D8352B021F14A8C00CCDD1F /* LaunchScreen.storyboard */,
+				0D8352B321F14A8C00CCDD1F /* Info.plist */,
+			);
+			path = stabvideo;
+			sourceTree = "<group>";
+		};
+		0D8352BB21F14A8C00CCDD1F /* stabvideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D8352BC21F14A8C00CCDD1F /* stabvideoTests.swift */,
+				0D8352BE21F14A8C00CCDD1F /* Info.plist */,
+			);
+			path = stabvideoTests;
+			sourceTree = "<group>";
+		};
+		0D8352C621F14A8C00CCDD1F /* stabvideoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D8352C721F14A8C00CCDD1F /* stabvideoUITests.swift */,
+				0D8352C921F14A8C00CCDD1F /* Info.plist */,
+			);
+			path = stabvideoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D8352A321F14A8B00CCDD1F /* stabvideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D8352CC21F14A8C00CCDD1F /* Build configuration list for PBXNativeTarget "stabvideo" */;
+			buildPhases = (
+				0D8352A021F14A8B00CCDD1F /* Sources */,
+				0D8352A121F14A8B00CCDD1F /* Frameworks */,
+				0D8352A221F14A8B00CCDD1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stabvideo;
+			productName = stabvideo;
+			productReference = 0D8352A421F14A8B00CCDD1F /* stabvideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D8352B721F14A8C00CCDD1F /* stabvideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D8352CF21F14A8C00CCDD1F /* Build configuration list for PBXNativeTarget "stabvideoTests" */;
+			buildPhases = (
+				0D8352B421F14A8C00CCDD1F /* Sources */,
+				0D8352B521F14A8C00CCDD1F /* Frameworks */,
+				0D8352B621F14A8C00CCDD1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D8352BA21F14A8C00CCDD1F /* PBXTargetDependency */,
+			);
+			name = stabvideoTests;
+			productName = stabvideoTests;
+			productReference = 0D8352B821F14A8C00CCDD1F /* stabvideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D8352C221F14A8C00CCDD1F /* stabvideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D8352D221F14A8C00CCDD1F /* Build configuration list for PBXNativeTarget "stabvideoUITests" */;
+			buildPhases = (
+				0D8352BF21F14A8C00CCDD1F /* Sources */,
+				0D8352C021F14A8C00CCDD1F /* Frameworks */,
+				0D8352C121F14A8C00CCDD1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D8352C521F14A8C00CCDD1F /* PBXTargetDependency */,
+			);
+			name = stabvideoUITests;
+			productName = stabvideoUITests;
+			productReference = 0D8352C321F14A8C00CCDD1F /* stabvideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D83529C21F14A8B00CCDD1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Dinh Le";
+				TargetAttributes = {
+					0D8352A321F14A8B00CCDD1F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0D8352B721F14A8C00CCDD1F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0D8352A321F14A8B00CCDD1F;
+					};
+					0D8352C221F14A8C00CCDD1F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0D8352A321F14A8B00CCDD1F;
+					};
+				};
+			};
+			buildConfigurationList = 0D83529F21F14A8B00CCDD1F /* Build configuration list for PBXProject "stabvideo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D83529B21F14A8B00CCDD1F;
+			productRefGroup = 0D8352A521F14A8B00CCDD1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D8352A321F14A8B00CCDD1F /* stabvideo */,
+				0D8352B721F14A8C00CCDD1F /* stabvideoTests */,
+				0D8352C221F14A8C00CCDD1F /* stabvideoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D8352A221F14A8B00CCDD1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8352B221F14A8C00CCDD1F /* LaunchScreen.storyboard in Resources */,
+				0D8352AF21F14A8C00CCDD1F /* Assets.xcassets in Resources */,
+				0D8352AD21F14A8B00CCDD1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D8352B621F14A8C00CCDD1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D8352C121F14A8C00CCDD1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D8352A021F14A8B00CCDD1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8352AA21F14A8B00CCDD1F /* ViewController.swift in Sources */,
+				0D8352A821F14A8B00CCDD1F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D8352B421F14A8C00CCDD1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8352BD21F14A8C00CCDD1F /* stabvideoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D8352BF21F14A8C00CCDD1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8352C821F14A8C00CCDD1F /* stabvideoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D8352BA21F14A8C00CCDD1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D8352A321F14A8B00CCDD1F /* stabvideo */;
+			targetProxy = 0D8352B921F14A8C00CCDD1F /* PBXContainerItemProxy */;
+		};
+		0D8352C521F14A8C00CCDD1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D8352A321F14A8B00CCDD1F /* stabvideo */;
+			targetProxy = 0D8352C421F14A8C00CCDD1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D8352AB21F14A8B00CCDD1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D8352AC21F14A8B00CCDD1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D8352B021F14A8C00CCDD1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D8352B121F14A8C00CCDD1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D8352CA21F14A8C00CCDD1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D8352CB21F14A8C00CCDD1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D8352CD21F14A8C00CCDD1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = stabvideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D8352CE21F14A8C00CCDD1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = stabvideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D8352D021F14A8C00CCDD1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = stabvideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stabvideo.app/stabvideo";
+			};
+			name = Debug;
+		};
+		0D8352D121F14A8C00CCDD1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = stabvideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stabvideo.app/stabvideo";
+			};
+			name = Release;
+		};
+		0D8352D321F14A8C00CCDD1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = stabvideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = stabvideo;
+			};
+			name = Debug;
+		};
+		0D8352D421F14A8C00CCDD1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = stabvideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = stabvideo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D83529F21F14A8B00CCDD1F /* Build configuration list for PBXProject "stabvideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D8352CA21F14A8C00CCDD1F /* Debug */,
+				0D8352CB21F14A8C00CCDD1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D8352CC21F14A8C00CCDD1F /* Build configuration list for PBXNativeTarget "stabvideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D8352CD21F14A8C00CCDD1F /* Debug */,
+				0D8352CE21F14A8C00CCDD1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D8352CF21F14A8C00CCDD1F /* Build configuration list for PBXNativeTarget "stabvideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D8352D021F14A8C00CCDD1F /* Debug */,
+				0D8352D121F14A8C00CCDD1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D8352D221F14A8C00CCDD1F /* Build configuration list for PBXNativeTarget "stabvideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D8352D321F14A8C00CCDD1F /* Debug */,
+				0D8352D421F14A8C00CCDD1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D83529C21F14A8B00CCDD1F /* Project object */;
+}
