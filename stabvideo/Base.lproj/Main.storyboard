@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9GT-Ff-9Mc">
-                                <rect key="frame" x="16" y="64" width="343" height="545"/>
+                                <rect key="frame" x="16" y="85" width="343" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qzf-DC-jv1">
                                     <size key="itemSize" width="94" height="94"/>
@@ -28,26 +28,47 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="e55-KX-OMU">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCollectionViewCell" id="e55-KX-OMU" customClass="VideoCollectionViewCell" customModule="stabvideo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CiY-iH-xaa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="CiY-iH-xaa" firstAttribute="leading" secondItem="e55-KX-OMU" secondAttribute="leading" id="W5U-z9-d7b"/>
+                                            <constraint firstAttribute="trailing" secondItem="CiY-iH-xaa" secondAttribute="trailing" id="Yd6-69-Ewr"/>
+                                            <constraint firstAttribute="bottom" secondItem="CiY-iH-xaa" secondAttribute="bottom" id="f64-rD-emt"/>
+                                            <constraint firstItem="CiY-iH-xaa" firstAttribute="top" secondItem="e55-KX-OMU" secondAttribute="top" id="ggw-m7-8jc"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="videoThumbnail" destination="CiY-iH-xaa" id="d95-B6-nOV"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="229-Vi-5mh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="i4g-E2-eDF"/>
+                                </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nt-g7-Sn1">
                                 <rect key="frame" x="149" y="617" width="77" height="30"/>
                                 <state key="normal" title="Load Video"/>
+                                <connections>
+                                    <action selector="startLoadVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MY9-Ja-X17"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="6Nt-g7-Sn1" secondAttribute="bottom" constant="20" symbolic="YES" id="2xQ-hM-qtj"/>
                             <constraint firstItem="9GT-Ff-9Mc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6jq-Oj-66Y"/>
-                            <constraint firstItem="9GT-Ff-9Mc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NDn-kd-46e"/>
+                            <constraint firstItem="9GT-Ff-9Mc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="NDn-kd-46e"/>
                             <constraint firstItem="6Nt-g7-Sn1" firstAttribute="top" secondItem="9GT-Ff-9Mc" secondAttribute="bottom" constant="8" symbolic="YES" id="U6H-JW-SEg"/>
                             <constraint firstItem="9GT-Ff-9Mc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aM8-HK-kWC"/>
                             <constraint firstItem="9GT-Ff-9Mc" firstAttribute="centerX" secondItem="6Nt-g7-Sn1" secondAttribute="centerX" id="uUN-dp-nnK"/>
@@ -56,7 +77,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="xTd-pf-eRR"/>
                     <connections>
-                        <segue destination="YKh-kF-rtw" kind="show" identifier="viewEditor" id="jkP-q6-oV3"/>
+                        <outlet property="collectionView" destination="9GT-Ff-9Mc" id="mn0-v6-ULt"/>
+                        <segue destination="YKh-kF-rtw" kind="show" identifier="showEditor" id="jkP-q6-oV3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -81,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="-564.46776611694156"/>
         </scene>
-        <!--View Controller-->
+        <!--Editor View Controller-->
         <scene sceneID="N96-kR-95i">
             <objects>
-                <viewController id="YKh-kF-rtw" sceneMemberID="viewController">
+                <viewController id="YKh-kF-rtw" customClass="EditorViewController" customModule="stabvideo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cbA-Y9-Cp5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

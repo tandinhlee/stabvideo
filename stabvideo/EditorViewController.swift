@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Photos
 
 class EditorViewController: UIViewController {
-
+    var selectedVideo: PHAsset?
     override func viewDidLoad() {
         super.viewDidLoad()
 
