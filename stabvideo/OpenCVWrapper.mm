@@ -238,24 +238,25 @@ using namespace std;
     PHVideoRequestOptions *option = [PHVideoRequestOptions new];
     [[PHImageManager defaultManager] requestAVAssetForVideo:sourceVideo options:option resultHandler:^(AVAsset * avasset, AVAudioMix * audioMix, NSDictionary * info) {
         //avasset
-        AVAssetTrack * videoATrack = [[avasset tracksWithMediaType:AVMediaTypeVideo] lastObject];
+        AVAssetTrack * videoATrack = [[avasset tracksWithMediaType:AVMediaTypeVideo] firstObject];
         Float64 fps = 0.0f;
         if(videoATrack)
         {
             fps = videoATrack.nominalFrameRate;
         }
-        Float64 durationSeconds = CMTimeGetSeconds(avasset.duration);
-        Float64 timePerFrame = 1.0 / fps;
-        Float64 totalFrames = durationSeconds * fps;
+        CGFloat durationSeconds = CMTimeGetSeconds([avasset duration]);
+        CGFloat totalFrames = fps*durationSeconds;
         AVAssetImageGenerator *imageGenerator = [[AVAssetImageGenerator alloc] initWithAsset:avasset];
+        [imageGenerator setAppliesPreferredTrackTransform:YES];
+        imageGenerator.requestedTimeToleranceAfter =  kCMTimeZero;
+        imageGenerator.requestedTimeToleranceBefore =  kCMTimeZero;
         //Step through the frames
         vector<cv::Mat> videoMatArray = *new vector<cv::Mat>();
         for (int counter = 0; counter <= totalFrames; counter++){
-            CMTime actualTime;
-            Float64 secondsIn = counter*timePerFrame;
-            CMTime imageTimeEstimate = CMTimeMakeWithSeconds(secondsIn, 600);
+//            Float64 fromTime = (Float64)counter/fps;
+            CMTime imageTimeEstimate = CMTimeMake(counter,fps);
             NSError *error;
-            CGImageRef imageframe = [imageGenerator copyCGImageAtTime:imageTimeEstimate actualTime:&actualTime error:&error];
+            CGImageRef imageframe = [imageGenerator copyCGImageAtTime:imageTimeEstimate actualTime:nil error:&error];
             UIImage *image = [UIImage imageWithCGImage:imageframe];
             //...Do some processing on the image
             cv::Mat cvMat = [self cvMatFromUIImage:image];

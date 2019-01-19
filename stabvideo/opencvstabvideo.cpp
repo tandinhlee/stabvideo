@@ -15,7 +15,7 @@
 // This video stablisation smooths the global trajectory using a sliding average window
 
 const int SMOOTHING_RADIUS = 30; // In frames. The larger the more stable the video, but less reactive to sudden panning
-const int BORDER_CROP = 20; // In pixels. Crops the border to reduce the black borders from stabilisation being too noticeable.
+const int BORDER_CROP = 64; // In pixels. Crops the border to reduce the black borders from stabilisation being too noticeable.
 
 // 1. Get previous to current frame transformation (dx, dy, da) for all frames
 // 2. Accumulate the transformations to get the image trajectory
@@ -101,8 +101,9 @@ vector<Mat> opencvstabvideo::stablelize(vector<Mat> videoArray)
         }
         
         // translation + rotation only
-        //Mat T = estimateRigidTransform(prev_corner2, cur_corner2, false); // false = rigid transform, no scaling/shearing
+//        Mat T = estimateRigidTransform(prev_corner2, cur_corner2, false); // false = rigid transform, no scaling/shearing
         Mat T = estimateAffine2D(prev_corner2, cur_corner2);
+        //        Mat T = estimateAffinePartial2D(prev_corner2, cur_corner2);
         // in rare cases no transform is found. We'll just use the last known good transform.
         if(T.data == NULL) {
             last_T.copyTo(T);
@@ -203,7 +204,7 @@ vector<Mat> opencvstabvideo::stablelize(vector<Mat> videoArray)
     
     int vert_border = BORDER_CROP * prev.rows / prev.cols; // get the aspect ratio correct
     vector<Mat> outputVideo = *new vector<Mat>();
-    for(long i = 0; i < max_frames; i++) { // don't process the very last frame, no valid transform
+    for(long i = 0; i < max_frames - 1; i++) { // don't process the very last frame, no valid transform
         cur = videoArray.at(i);
         if(cur.data == NULL) {
             break;
