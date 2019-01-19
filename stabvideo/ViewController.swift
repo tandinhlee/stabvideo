@@ -52,8 +52,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     // MARK: UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        selectedVideo = videos?.object(at: indexPath.row)
-        performSegue(withIdentifier: "showEditor", sender: self)
+        selectedVideo =  videos?.object(at: indexPath.row)
+        self.performSegue(withIdentifier: "showEditor", sender: self)
     }
     func fullResolutionImageData(asset: PHAsset) -> UIImage? {
         let options = PHImageRequestOptions()

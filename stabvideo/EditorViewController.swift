@@ -10,14 +10,20 @@ import UIKit
 import Photos
 
 class EditorViewController: UIViewController {
-    var selectedVideo: PHAsset?
+    var selectedVideo: PHAsset!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func startStabilization(_ sender: Any) {
+        // HAVE URL NOW
+        let ocwrapper = OpenCVWrapper()
+        ocwrapper.stabilizationVideo(selectedVideo!)
+        
+    }
     /*
     // MARK: - Navigation
 
@@ -27,5 +33,8 @@ class EditorViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func getFrameRateVideoAsset(asset: PHAsset) -> NSInteger {
+//        let options: PHVideoRequestOptions = PHVideoRequestOptions()
+        return 0
+    }
 }
