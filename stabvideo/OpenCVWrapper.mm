@@ -50,6 +50,7 @@ using namespace std;
     
     return finalImage;
 }
+
 - (CVPixelBufferRef) pixelBufferFromCGImage: (CGImageRef) image size:(CGSize)size
 {
     
@@ -88,9 +89,15 @@ using namespace std;
     
     return pxbuffer;
 }
--(void)writeImageAsMovie:(NSArray *)array toPath:(NSString*)path size:(CGSize)size withFPS:(CGFloat) fps
+-(void) writeImageAsMovie:(NSArray *)array toPath:(NSString*)path size:(CGSize)size withFPS:(CGFloat) fps
 {
-    
+    CGFloat targetWidth = 0;
+    do {
+        targetWidth += 16; // width must be multiple of 16
+    } while (targetWidth < size.width);
+    CGFloat ratio = targetWidth/size.width;
+    CGFloat targetHeight = size.height*ratio;
+    CGSize newSize = CGSizeMake(targetWidth, targetHeight);
     NSError *error = nil;
     
     // FIRST, start up an AVAssetWriter instance to write your video
@@ -104,8 +111,8 @@ using namespace std;
     
     NSDictionary *videoSettings = [NSDictionary dictionaryWithObjectsAndKeys:
                                    AVVideoCodecTypeH264, AVVideoCodecKey,
-                                   [NSNumber numberWithInt:size.width], AVVideoWidthKey,
-                                   [NSNumber numberWithInt:size.height], AVVideoHeightKey,
+                                   [NSNumber numberWithInt:newSize.width], AVVideoWidthKey,
+                                   [NSNumber numberWithInt:newSize.height], AVVideoHeightKey,
                                    nil];
     
     AVAssetWriterInput* writerInput = [AVAssetWriterInput assetWriterInputWithMediaType:AVMediaTypeVideo
@@ -122,26 +129,21 @@ using namespace std;
     [videoWriter startWriting];
     // This starts your video at time = 0
     [videoWriter startSessionAtSourceTime:kCMTimeZero];
-    
     CVPixelBufferRef buffer = NULL;
-    
-    // This was just our utility class to get screen sizes etc.
-//    ATHSingleton *singleton = [ATHSingleton singletons];
-    
     int i = 0;
     while (true)
     {
         // Check if the writer is ready for more data, if not, just wait
         if(writerInput.readyForMoreMediaData){
             
-            CMTime frameTime = CMTimeMake(150, 600);
+            CMTime frameTime = CMTimeMake(600/fps, 600);
             // CMTime = Value and Timescale.
             // Timescale = the number of tics per second you want
             // Value is the number of tics
             // For us - each frame we add will be 1/4th of a second
             // Apple recommend 600 tics per second for video because it is a
             // multiple of the standard video rates 24, 30, 60 fps etc.
-            CMTime lastTime=CMTimeMake(i*150, 600);
+            CMTime lastTime=CMTimeMake(i*600/fps, 600);
             CMTime presentTime=CMTimeAdd(lastTime, frameTime);
             
             if (i == 0) {presentTime = CMTimeMake(0, 600);}
@@ -155,9 +157,8 @@ using namespace std;
             else
             {
                 // This command grabs the next UIImage and converts it to a CGImage
-                buffer = [self pixelBufferFromCGImage:[[array objectAtIndex:i] CGImage] size:size];
+                buffer = [self pixelBufferFromCGImage:[[array objectAtIndex:i] CGImage] size:newSize];
             }
-            
             
             if (buffer)
             {
@@ -175,14 +176,23 @@ using namespace std;
                     NSLog(@"Finished writing...checking completion status...");
                     if (videoWriter.status != AVAssetWriterStatusFailed && videoWriter.status == AVAssetWriterStatusCompleted)
                     {
-                        NSLog(@"Video writing succeeded.");
-                        
                         // Move video to camera roll
                         // NOTE: You cannot write directly to the camera roll.
                         // You must first write to an iOS directory then move it!
                         NSURL *videoTempURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@", path]];
-//                        [self saveToCameraRoll:videoTempURL];
-                        
+                        //                        [self saveToCameraRoll:videoTempURL];
+                        [PHPhotoLibrary.sharedPhotoLibrary performChanges:^{
+                            [PHAssetChangeRequest creationRequestForAssetFromVideoAtFileURL:videoTempURL];
+                        } completionHandler:^(BOOL success, NSError * _Nullable error) {
+                            if (success) {
+                                dispatch_async(dispatch_get_main_queue(), ^{
+                                    NSLog(@"Video writing succeeded.");
+//                                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Success" message:@"Your video was successfully saved" preferredStyle:UIAlertControllerStyleAlert];
+//
+//                                    [self presentViewController:alert animated:YES completion:nil];
+                                });
+                            }
+                        }];
                     } else
                     {
                         NSLog(@"Video writing failed: %@", videoWriter.error);
@@ -222,9 +232,9 @@ using namespace std;
 }
 
 - (void) stabilizationVideo:(PHAsset *) sourceVideo{
-//    opencvstabvideo *ovstabvideo = new opencvstabvideo;
-//    string url = ovstabvideo->stablelize([sourceVideoUrlString UTF8String]);
-//    NSString * result = [[NSString alloc] initWithUTF8String:url.c_str()];
+    //    opencvstabvideo *ovstabvideo = new opencvstabvideo;
+    //    string url = ovstabvideo->stablelize([sourceVideoUrlString UTF8String]);
+    //    NSString * result = [[NSString alloc] initWithUTF8String:url.c_str()];
     PHVideoRequestOptions *option = [PHVideoRequestOptions new];
     [[PHImageManager defaultManager] requestAVAssetForVideo:sourceVideo options:option resultHandler:^(AVAsset * avasset, AVAudioMix * audioMix, NSDictionary * info) {
         //avasset
@@ -260,6 +270,12 @@ using namespace std;
             UIImage *matImage = [self UIImageFromCVMat:mat];
             [imageOutputArray addObject:matImage];
         }
+        NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"ddmmyyyhhmmss"];
+        NSString *stringFromDate = [formatter stringFromDate:[NSDate date]];
+        NSString *fullPathVideo = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"stabilized_%@.mov",stringFromDate]];
+        [self writeImageAsMovie:imageOutputArray toPath:fullPathVideo size:[(UIImage *)[imageOutputArray firstObject] size] withFPS:fps];
     }];
 }
 @end
