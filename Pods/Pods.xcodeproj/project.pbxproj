@@ -7,69 +7,120 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		466221D323D687EC05D870570C6894EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		48D0B41AAE298610A62074BCB40995B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		7CEE87ED84AFDB21554218329D2B51B0 /* Pods-stabvideo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F930D3536281696CF58750F61B20239 /* Pods-stabvideo-dummy.m */; };
+		117F065E958F1E583364D2C0DB624F1A /* IHProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9614DDAB224B787576530BF3DD7CF6 /* IHProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1802E9103383EEF56101E85CFA0DA126 /* angle-mask@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 27CCC5D65EFF56E37DA20FE030BADCA7 /* angle-mask@2x.png */; };
+		1E09B92D6DBEA8649741165EC2AC3444 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */; };
+		23BDFC038E069E60038BD3FDF25FFB56 /* IHProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4E62797904B33E27E21D38E0CF7168 /* IHProgressHUD.swift */; };
+		2A20C5962AB9237A5B82A3164FE1782A /* info.png in Sources */ = {isa = PBXBuildFile; fileRef = DEF6D2058AD7CC7B2E6DAF1A10C103DA /* info.png */; };
+		3247796B3A0A81E5B8A1470516E8D3EF /* IndefiniteAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48F556DA0B112E46E7E40D32D5EA5D /* IndefiniteAnimatedView.swift */; };
+		3A468F61CE87D447AA99D4B1DE1AE539 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03D525EBD2B1B2D3C9A3A61589ABA5A /* QuartzCore.framework */; };
+		43438459119890AAF0DD632E61F9F24B /* success@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 8F91C7B52983C53855F285E1F1750F26 /* success@3x.png */; };
+		48D0B41AAE298610A62074BCB40995B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */; };
+		582DB899927D4B28EC490129BE2357B3 /* success@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 224E0433028527FDBEEA117DB27C0658 /* success@2x.png */; };
+		613214DA1E5A4EC2BB372E67E4C071DC /* success.png in Sources */ = {isa = PBXBuildFile; fileRef = 624B6EDCAE821BC4511D780C2A393A6D /* success.png */; };
+		7F213E7A67CA5DC89E0914E4AB7156EE /* error@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 3E83C33F756903D8F5ED9E67A0E38A89 /* error@2x.png */; };
 		887A08B5D3A1277FB0177C5E0F4D0502 /* Pods-stabvideoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F75953536FF29060DB9D20F3F4440B /* Pods-stabvideoUITests-dummy.m */; };
+		993546F78CB4C7131FCB67D2068543D2 /* info@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = E4B1F0C63706A040C1C9920C7FDA864A /* info@3x.png */; };
 		A3EFED2322EF9BFAC18E70ACF5B18CCC /* Pods-stabvideoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B23EDAF5BB8E770CAAA3F7BBE180468 /* Pods-stabvideoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42B553FEFF84F038CC18D8D8D575252 /* error@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = C496105538406751A09A5CC248366D6E /* error@3x.png */; };
+		A498220FF0381DD6E5C956DBA9BE4191 /* RadialGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB204BC8A42C6A6087F941E1B2709FA /* RadialGradientLayer.swift */; };
+		B2C92C116A600890149FFADD37041499 /* angle-mask.png in Sources */ = {isa = PBXBuildFile; fileRef = DC7FEF33C1E83B4D06B21FE5C0628985 /* angle-mask.png */; };
+		B623E266719D95B7838BB0123CFBAEF6 /* info@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = E62ED4D46F9A0A2CD7F4D43AA2F08432 /* info@2x.png */; };
+		BAF00E76947AE357482A71106D4A7AB0 /* error.png in Sources */ = {isa = PBXBuildFile; fileRef = 1A37F94748390858739FEA1EDDCEBCE9 /* error.png */; };
 		C238B26ABD2B39A1AC4ABED4792D93D2 /* Pods-stabvideoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB51547BE3E91C8AB159022EE1082EF /* Pods-stabvideoTests-dummy.m */; };
+		C8DE4DB3D52033544EAEEFB403B7C4E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */; };
+		D15A8996AA5267D834AFB2CCD9FDCCCD /* Pods-stabvideo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F930D3536281696CF58750F61B20239 /* Pods-stabvideo-dummy.m */; };
 		D8AE9EC1D149289E474199B67633AAA0 /* Pods-stabvideoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 422C050D069140AB35640865C3C4AAB5 /* Pods-stabvideoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFDD906C5D439075FEDF7E52BCB91F4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		E6E44A5C73BAA6B26B7AFC865F8A1B7B /* Pods-stabvideo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1160371BCD1C891D406E44D043BA8F2 /* Pods-stabvideo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF64ADC6DF24F565A07A5AD5026F5DE1 /* angle-mask@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 30366D294F289471A8B991FE2D2F6F8E /* angle-mask@3x.png */; };
+		DFCB41DC48020F773D2902D8CCCFD613 /* IHProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD43DCC71B35C091EDEB3130681A4948 /* IHProgressHUD-dummy.m */; };
+		DFDD906C5D439075FEDF7E52BCB91F4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */; };
+		ECF9251C41CEF35C023E0282DFECBDE3 /* ProgressAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DEEFEF1963E5E590D041FF6D02B40F /* ProgressAnimatedView.swift */; };
+		F3774A202AE04646BB3F1CF0ACB87801 /* Pods-stabvideo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1160371BCD1C891D406E44D043BA8F2 /* Pods-stabvideo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		080F3365491A46914A90D77446BC072F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FEA2E116C3929E8646F68DE141363F6;
+			remoteInfo = IHProgressHUD;
+		};
 		AC706278D43CD538631284D9793343C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FA046C8B2C5248CF873CE3229A67F9D7;
+			remoteGlobalIDString = 264DA7343F1D7E22EDA4D711F4FD2B96;
 			remoteInfo = "Pods-stabvideo";
 		};
 		B0952294BA7DA842BAD62571B46F613A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FA046C8B2C5248CF873CE3229A67F9D7;
+			remoteGlobalIDString = 264DA7343F1D7E22EDA4D711F4FD2B96;
 			remoteInfo = "Pods-stabvideo";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		105F82C04F2381C028AEDA25A81AF699 /* Pods_stabvideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_stabvideo.framework; path = "Pods-stabvideo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		018CC4994D27BC4CE5783C4C2DB39D5D /* Pods_stabvideoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_stabvideoUITests.framework; path = "Pods-stabvideoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06103BC95AF9E0B2FAE2E007D6681C90 /* IHProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IHProgressHUD.modulemap; sourceTree = "<group>"; };
 		146502D8C3B296B5F0FA12246B4E64BE /* Pods-stabvideo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stabvideo-frameworks.sh"; sourceTree = "<group>"; };
+		1A37F94748390858739FEA1EDDCEBCE9 /* error.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = error.png; path = IHProgressHUD/Classes/IHProgressHUD.bundle/error.png; sourceTree = "<group>"; };
+		1A9614DDAB224B787576530BF3DD7CF6 /* IHProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IHProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		1DEC1ECF52FACD9DA27BB13DE74F8303 /* IHProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IHProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		1EF44F5436070B032DF2CD2EA5ED7D45 /* Pods-stabvideoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stabvideoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		224E0433028527FDBEEA117DB27C0658 /* success@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "success@2x.png"; path = "IHProgressHUD/Classes/IHProgressHUD.bundle/success@2x.png"; sourceTree = "<group>"; };
 		233DF42662CA03570732051D93D1FFF2 /* Pods-stabvideoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stabvideoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		27CCC5D65EFF56E37DA20FE030BADCA7 /* angle-mask@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "angle-mask@2x.png"; path = "IHProgressHUD/Classes/IHProgressHUD.bundle/angle-mask@2x.png"; sourceTree = "<group>"; };
+		2C0C16E2B2E94D01B834DF6BF4D69C8F /* IHProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IHProgressHUD.xcconfig; sourceTree = "<group>"; };
 		2F930D3536281696CF58750F61B20239 /* Pods-stabvideo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stabvideo-dummy.m"; sourceTree = "<group>"; };
+		30366D294F289471A8B991FE2D2F6F8E /* angle-mask@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "angle-mask@3x.png"; path = "IHProgressHUD/Classes/IHProgressHUD.bundle/angle-mask@3x.png"; sourceTree = "<group>"; };
 		346F76A306141F1A1F52E5DD6369B8EC /* Pods-stabvideoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stabvideoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		36E6A0DA22AC29C31E841C1DBA4A4A47 /* Pods_stabvideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_stabvideo.framework; path = "Pods-stabvideo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E83C33F756903D8F5ED9E67A0E38A89 /* error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@2x.png"; path = "IHProgressHUD/Classes/IHProgressHUD.bundle/error@2x.png"; sourceTree = "<group>"; };
 		3FD3AE6B246EC07A6EB818C92AA4648B /* Pods-stabvideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stabvideo.release.xcconfig"; sourceTree = "<group>"; };
 		422C050D069140AB35640865C3C4AAB5 /* Pods-stabvideoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stabvideoUITests-umbrella.h"; sourceTree = "<group>"; };
-		4A0C49CFFF6700B9C6DCB5250DAD5E68 /* Pods_stabvideoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_stabvideoTests.framework; path = "Pods-stabvideoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A68AE93A35A7933593F4E57A75577C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C57CE54297806BCFCF8A96A18446456 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E8F3F46784BD480864EC21D966E592E /* Pods-stabvideoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stabvideoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		51ADBEE4FDA45C9E6AC709AC7CBEC116 /* IHProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IHProgressHUD.framework; path = IHProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB204BC8A42C6A6087F941E1B2709FA /* RadialGradientLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadialGradientLayer.swift; path = IHProgressHUD/Classes/RadialGradientLayer.swift; sourceTree = "<group>"; };
 		60AF09A5D65D4AF09C4327349E564D29 /* Pods-stabvideo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stabvideo-acknowledgements.plist"; sourceTree = "<group>"; };
+		624B6EDCAE821BC4511D780C2A393A6D /* success.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = success.png; path = IHProgressHUD/Classes/IHProgressHUD.bundle/success.png; sourceTree = "<group>"; };
 		6EFDF406F6719E6F079E4FC05E85F9E2 /* Pods-stabvideoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stabvideoTests-frameworks.sh"; sourceTree = "<group>"; };
 		6F19F56BDC72DBD244C35F4A154C082F /* Pods-stabvideo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stabvideo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7002469E583E809ABEDA838762DA6EF9 /* Pods-stabvideoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stabvideoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7A02E52BE1CB40AC95B2AA2FB14C6ABA /* Pods-stabvideoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stabvideoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A8CCC4C2BDE27896F945D85AC5D8050 /* Pods-stabvideo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-stabvideo.modulemap"; sourceTree = "<group>"; };
 		82958F3FF9C9592802F9DD930A4D97A8 /* Pods-stabvideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stabvideo.debug.xcconfig"; sourceTree = "<group>"; };
+		8F91C7B52983C53855F285E1F1750F26 /* success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "success@3x.png"; path = "IHProgressHUD/Classes/IHProgressHUD.bundle/success@3x.png"; sourceTree = "<group>"; };
 		91F75953536FF29060DB9D20F3F4440B /* Pods-stabvideoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stabvideoUITests-dummy.m"; sourceTree = "<group>"; };
-		934E809FC543BBFDD2A5B26628088EAB /* Pods_stabvideoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_stabvideoUITests.framework; path = "Pods-stabvideoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9556004094576111D2157BE0F493AE9B /* Pods-stabvideoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stabvideoTests-resources.sh"; sourceTree = "<group>"; };
 		98C0496CF7E47A237D0D664410234739 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B23EDAF5BB8E770CAAA3F7BBE180468 /* Pods-stabvideoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stabvideoTests-umbrella.h"; sourceTree = "<group>"; };
 		9F0AC7878D7FD2B0CCB5906A0A21770B /* Pods-stabvideoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-stabvideoUITests.modulemap"; sourceTree = "<group>"; };
+		A7DEEFEF1963E5E590D041FF6D02B40F /* ProgressAnimatedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressAnimatedView.swift; path = IHProgressHUD/Classes/ProgressAnimatedView.swift; sourceTree = "<group>"; };
 		AD05B93A683B273D3DCA37235174B041 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C496105538406751A09A5CC248366D6E /* error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@3x.png"; path = "IHProgressHUD/Classes/IHProgressHUD.bundle/error@3x.png"; sourceTree = "<group>"; };
 		C717471B8754BFC0E2282174C80E405B /* Pods-stabvideoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stabvideoTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CC28054996C75DE4A4DD460BEC175B9C /* Pods-stabvideoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stabvideoUITests-resources.sh"; sourceTree = "<group>"; };
 		D511643466709970FE0ECBE6F8E188C4 /* Pods-stabvideoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stabvideoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DC4E62797904B33E27E21D38E0CF7168 /* IHProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IHProgressHUD.swift; path = IHProgressHUD/Classes/IHProgressHUD.swift; sourceTree = "<group>"; };
+		DC7FEF33C1E83B4D06B21FE5C0628985 /* angle-mask.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "angle-mask.png"; path = "IHProgressHUD/Classes/IHProgressHUD.bundle/angle-mask.png"; sourceTree = "<group>"; };
+		DD43DCC71B35C091EDEB3130681A4948 /* IHProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IHProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		DEF6D2058AD7CC7B2E6DAF1A10C103DA /* info.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = info.png; path = IHProgressHUD/Classes/IHProgressHUD.bundle/info.png; sourceTree = "<group>"; };
+		E4B1F0C63706A040C1C9920C7FDA864A /* info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "info@3x.png"; path = "IHProgressHUD/Classes/IHProgressHUD.bundle/info@3x.png"; sourceTree = "<group>"; };
+		E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E62ED4D46F9A0A2CD7F4D43AA2F08432 /* info@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "info@2x.png"; path = "IHProgressHUD/Classes/IHProgressHUD.bundle/info@2x.png"; sourceTree = "<group>"; };
 		E99C4E0B68EF4468020FD1C2E9337CC2 /* Pods-stabvideoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stabvideoUITests-frameworks.sh"; sourceTree = "<group>"; };
 		EBD32C86DACACC162EB8472BE5889BAD /* Pods-stabvideo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stabvideo-resources.sh"; sourceTree = "<group>"; };
+		F03D525EBD2B1B2D3C9A3A61589ABA5A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		F1160371BCD1C891D406E44D043BA8F2 /* Pods-stabvideo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stabvideo-umbrella.h"; sourceTree = "<group>"; };
+		F2C3C31C4D72755A7EF4202271BBB417 /* Pods_stabvideoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_stabvideoTests.framework; path = "Pods-stabvideoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB450339C1951C5B76139119F1D29060 /* Pods-stabvideoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-stabvideoTests.modulemap"; sourceTree = "<group>"; };
+		FE48F556DA0B112E46E7E40D32D5EA5D /* IndefiniteAnimatedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndefiniteAnimatedView.swift; path = IHProgressHUD/Classes/IndefiniteAnimatedView.swift; sourceTree = "<group>"; };
 		FEB51547BE3E91C8AB159022EE1082EF /* Pods-stabvideoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stabvideoTests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,11 +133,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85B6CA59BED027283EC8F6656C90240A /* Frameworks */ = {
+		57BF43F00660D45BFA809EE4785E05C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				466221D323D687EC05D870570C6894EB /* Foundation.framework in Frameworks */,
+				1E09B92D6DBEA8649741165EC2AC3444 /* Foundation.framework in Frameworks */,
+				3A468F61CE87D447AA99D4B1DE1AE539 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6160BEF9D5170C74F3D82DA5E7BAB525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8DE4DB3D52033544EAEEFB403B7C4E8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +197,51 @@
 			path = "Target Support Files/Pods-stabvideoTests";
 			sourceTree = "<group>";
 		};
-		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+		272FF43DBF15CF6521FA81787F411C31 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+				06103BC95AF9E0B2FAE2E007D6681C90 /* IHProgressHUD.modulemap */,
+				2C0C16E2B2E94D01B834DF6BF4D69C8F /* IHProgressHUD.xcconfig */,
+				DD43DCC71B35C091EDEB3130681A4948 /* IHProgressHUD-dummy.m */,
+				1DEC1ECF52FACD9DA27BB13DE74F8303 /* IHProgressHUD-prefix.pch */,
+				1A9614DDAB224B787576530BF3DD7CF6 /* IHProgressHUD-umbrella.h */,
+				4A68AE93A35A7933593F4E57A75577C2 /* Info.plist */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/IHProgressHUD";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B77A7A05442780EC92DC1750CA2454E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F0B1CEC1E4A93C6D78A8CBB64066E09 /* IHProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				DC7FEF33C1E83B4D06B21FE5C0628985 /* angle-mask.png */,
+				27CCC5D65EFF56E37DA20FE030BADCA7 /* angle-mask@2x.png */,
+				30366D294F289471A8B991FE2D2F6F8E /* angle-mask@3x.png */,
+				1A37F94748390858739FEA1EDDCEBCE9 /* error.png */,
+				3E83C33F756903D8F5ED9E67A0E38A89 /* error@2x.png */,
+				C496105538406751A09A5CC248366D6E /* error@3x.png */,
+				DC4E62797904B33E27E21D38E0CF7168 /* IHProgressHUD.swift */,
+				FE48F556DA0B112E46E7E40D32D5EA5D /* IndefiniteAnimatedView.swift */,
+				DEF6D2058AD7CC7B2E6DAF1A10C103DA /* info.png */,
+				E62ED4D46F9A0A2CD7F4D43AA2F08432 /* info@2x.png */,
+				E4B1F0C63706A040C1C9920C7FDA864A /* info@3x.png */,
+				A7DEEFEF1963E5E590D041FF6D02B40F /* ProgressAnimatedView.swift */,
+				5CB204BC8A42C6A6087F941E1B2709FA /* RadialGradientLayer.swift */,
+				624B6EDCAE821BC4511D780C2A393A6D /* success.png */,
+				224E0433028527FDBEEA117DB27C0658 /* success@2x.png */,
+				8F91C7B52983C53855F285E1F1750F26 /* success@3x.png */,
+				272FF43DBF15CF6521FA81787F411C31 /* Support Files */,
+			);
+			name = IHProgressHUD;
+			path = IHProgressHUD;
 			sourceTree = "<group>";
 		};
 		58D69FE9768A60F3C6D4AD07ADB5D1F4 /* Targets Support Files */ = {
@@ -155,22 +254,41 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		6A5BE8347C6CB82229FC28F473C32E06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F0B1CEC1E4A93C6D78A8CBB64066E09 /* IHProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B77A7A05442780EC92DC1750CA2454E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */,
+				F03D525EBD2B1B2D3C9A3A61589ABA5A /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				849B47C3B765D7A17DB625B3D1807C91 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				6A5BE8347C6CB82229FC28F473C32E06 /* Pods */,
+				837894945BAAAA046D4E3CE6469B1A4A /* Products */,
 				58D69FE9768A60F3C6D4AD07ADB5D1F4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		849B47C3B765D7A17DB625B3D1807C91 /* Products */ = {
+		837894945BAAAA046D4E3CE6469B1A4A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				105F82C04F2381C028AEDA25A81AF699 /* Pods_stabvideo.framework */,
-				4A0C49CFFF6700B9C6DCB5250DAD5E68 /* Pods_stabvideoTests.framework */,
-				934E809FC543BBFDD2A5B26628088EAB /* Pods_stabvideoUITests.framework */,
+				51ADBEE4FDA45C9E6AC709AC7CBEC116 /* IHProgressHUD.framework */,
+				36E6A0DA22AC29C31E841C1DBA4A4A47 /* Pods_stabvideo.framework */,
+				F2C3C31C4D72755A7EF4202271BBB417 /* Pods_stabvideoTests.framework */,
+				018CC4994D27BC4CE5783C4C2DB39D5D /* Pods_stabvideoUITests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,22 +311,14 @@
 			path = "Target Support Files/Pods-stabvideo";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				44D5347904CF754D6785B84253F2574A /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		263C89AE51F8916B0A13B2BFA9DBEA69 /* Headers */ = {
+		6F4F30E491585EFD14E476A903893FDB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6E44A5C73BAA6B26B7AFC865F8A1B7B /* Pods-stabvideo-umbrella.h in Headers */,
+				117F065E958F1E583364D2C0DB624F1A /* IHProgressHUD-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +327,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8AE9EC1D149289E474199B67633AAA0 /* Pods-stabvideoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA07170A36F345F3584DC8F3D40F2691 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3774A202AE04646BB3F1CF0ACB87801 /* Pods-stabvideo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +365,44 @@
 			);
 			name = "Pods-stabvideoUITests";
 			productName = "Pods-stabvideoUITests";
-			productReference = 934E809FC543BBFDD2A5B26628088EAB /* Pods_stabvideoUITests.framework */;
+			productReference = 018CC4994D27BC4CE5783C4C2DB39D5D /* Pods_stabvideoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		264DA7343F1D7E22EDA4D711F4FD2B96 /* Pods-stabvideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3282EA0E7A45B37F0C88E4C78C9698D4 /* Build configuration list for PBXNativeTarget "Pods-stabvideo" */;
+			buildPhases = (
+				EA07170A36F345F3584DC8F3D40F2691 /* Headers */,
+				A30F68C079808A1CD7A5FA1E36B6113C /* Sources */,
+				6160BEF9D5170C74F3D82DA5E7BAB525 /* Frameworks */,
+				5640EA98B2516B0D6B57EACA47B66FEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A476A1D4873F185E8ADAB1B5FE275891 /* PBXTargetDependency */,
+			);
+			name = "Pods-stabvideo";
+			productName = "Pods-stabvideo";
+			productReference = 36E6A0DA22AC29C31E841C1DBA4A4A47 /* Pods_stabvideo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4FEA2E116C3929E8646F68DE141363F6 /* IHProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12FD106292D1C19C163584AF5B793D29 /* Build configuration list for PBXNativeTarget "IHProgressHUD" */;
+			buildPhases = (
+				6F4F30E491585EFD14E476A903893FDB /* Headers */,
+				7BAA3A4AD442A1E278CC886E5D9332D4 /* Sources */,
+				57BF43F00660D45BFA809EE4785E05C3 /* Frameworks */,
+				96DC08FDDFAFCABEC9BEF2F890305790 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IHProgressHUD;
+			productName = IHProgressHUD;
+			productReference = 51ADBEE4FDA45C9E6AC709AC7CBEC116 /* IHProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9A1061D2CAA9F7BEAC76AF3404DA08DC /* Pods-stabvideoTests */ = {
@@ -266,25 +421,7 @@
 			);
 			name = "Pods-stabvideoTests";
 			productName = "Pods-stabvideoTests";
-			productReference = 4A0C49CFFF6700B9C6DCB5250DAD5E68 /* Pods_stabvideoTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FA046C8B2C5248CF873CE3229A67F9D7 /* Pods-stabvideo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4417B760904123F2A747E40485F2C245 /* Build configuration list for PBXNativeTarget "Pods-stabvideo" */;
-			buildPhases = (
-				263C89AE51F8916B0A13B2BFA9DBEA69 /* Headers */,
-				E62A4702EFC1673EA72F42D019B473D7 /* Sources */,
-				85B6CA59BED027283EC8F6656C90240A /* Frameworks */,
-				BACFDE390CBBA53B86972AAA6E53F780 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-stabvideo";
-			productName = "Pods-stabvideo";
-			productReference = 105F82C04F2381C028AEDA25A81AF699 /* Pods_stabvideo.framework */;
+			productReference = F2C3C31C4D72755A7EF4202271BBB417 /* Pods_stabvideoTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -304,11 +441,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 849B47C3B765D7A17DB625B3D1807C91 /* Products */;
+			productRefGroup = 837894945BAAAA046D4E3CE6469B1A4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA046C8B2C5248CF873CE3229A67F9D7 /* Pods-stabvideo */,
+				4FEA2E116C3929E8646F68DE141363F6 /* IHProgressHUD */,
+				264DA7343F1D7E22EDA4D711F4FD2B96 /* Pods-stabvideo */,
 				9A1061D2CAA9F7BEAC76AF3404DA08DC /* Pods-stabvideoTests */,
 				1A3D071EED3913671DE2668012B26352 /* Pods-stabvideoUITests */,
 			);
@@ -316,6 +454,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5640EA98B2516B0D6B57EACA47B66FEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		658C0E6B6EAB21A7A5963A68C5A1B0FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,7 +468,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BACFDE390CBBA53B86972AAA6E53F780 /* Resources */ = {
+		96DC08FDDFAFCABEC9BEF2F890305790 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,11 +493,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E62A4702EFC1673EA72F42D019B473D7 /* Sources */ = {
+		7BAA3A4AD442A1E278CC886E5D9332D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CEE87ED84AFDB21554218329D2B51B0 /* Pods-stabvideo-dummy.m in Sources */,
+				B2C92C116A600890149FFADD37041499 /* angle-mask.png in Sources */,
+				1802E9103383EEF56101E85CFA0DA126 /* angle-mask@2x.png in Sources */,
+				DF64ADC6DF24F565A07A5AD5026F5DE1 /* angle-mask@3x.png in Sources */,
+				BAF00E76947AE357482A71106D4A7AB0 /* error.png in Sources */,
+				7F213E7A67CA5DC89E0914E4AB7156EE /* error@2x.png in Sources */,
+				A42B553FEFF84F038CC18D8D8D575252 /* error@3x.png in Sources */,
+				DFCB41DC48020F773D2902D8CCCFD613 /* IHProgressHUD-dummy.m in Sources */,
+				23BDFC038E069E60038BD3FDF25FFB56 /* IHProgressHUD.swift in Sources */,
+				3247796B3A0A81E5B8A1470516E8D3EF /* IndefiniteAnimatedView.swift in Sources */,
+				2A20C5962AB9237A5B82A3164FE1782A /* info.png in Sources */,
+				B623E266719D95B7838BB0123CFBAEF6 /* info@2x.png in Sources */,
+				993546F78CB4C7131FCB67D2068543D2 /* info@3x.png in Sources */,
+				ECF9251C41CEF35C023E0282DFECBDE3 /* ProgressAnimatedView.swift in Sources */,
+				A498220FF0381DD6E5C956DBA9BE4191 /* RadialGradientLayer.swift in Sources */,
+				613214DA1E5A4EC2BB372E67E4C071DC /* success.png in Sources */,
+				582DB899927D4B28EC490129BE2357B3 /* success@2x.png in Sources */,
+				43438459119890AAF0DD632E61F9F24B /* success@3x.png in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30F68C079808A1CD7A5FA1E36B6113C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15A8996AA5267D834AFB2CCD9FDCCCD /* Pods-stabvideo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,59 +536,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A476A1D4873F185E8ADAB1B5FE275891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IHProgressHUD;
+			target = 4FEA2E116C3929E8646F68DE141363F6 /* IHProgressHUD */;
+			targetProxy = 080F3365491A46914A90D77446BC072F /* PBXContainerItemProxy */;
+		};
 		B152E98354FDA12C15F5C2858BA12DBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-stabvideo";
-			target = FA046C8B2C5248CF873CE3229A67F9D7 /* Pods-stabvideo */;
+			target = 264DA7343F1D7E22EDA4D711F4FD2B96 /* Pods-stabvideo */;
 			targetProxy = B0952294BA7DA842BAD62571B46F613A /* PBXContainerItemProxy */;
 		};
 		CA3302984C28CF98B7F854E18C7B0C05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-stabvideo";
-			target = FA046C8B2C5248CF873CE3229A67F9D7 /* Pods-stabvideo */;
+			target = 264DA7343F1D7E22EDA4D711F4FD2B96 /* Pods-stabvideo */;
 			targetProxy = AC706278D43CD538631284D9793343C2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		092D16D90F86CB3A68E7F8D37360C95C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82958F3FF9C9592802F9DD930A4D97A8 /* Pods-stabvideo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-stabvideo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-stabvideo/Pods-stabvideo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -486,6 +623,41 @@
 			};
 			name = Debug;
 		};
+		138831867CF54DA95C092385244F0A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0C16E2B2E94D01B834DF6BF4D69C8F /* IHProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IHProgressHUD/IHProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IHProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IHProgressHUD/IHProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = IHProgressHUD;
+				PRODUCT_NAME = IHProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1C825B63344E08D46FE02BD1771E386F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 346F76A306141F1A1F52E5DD6369B8EC /* Pods-stabvideoUITests.debug.xcconfig */;
@@ -524,9 +696,9 @@
 			};
 			name = Debug;
 		};
-		35BFF49C87555CF063DBD5EF4712D9B0 /* Release */ = {
+		7D19900C3ECABE9D79F9CF89F1E6D962 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FD3AE6B246EC07A6EB818C92AA4648B /* Pods-stabvideo.release.xcconfig */;
+			baseConfigurationReference = 82958F3FF9C9592802F9DD930A4D97A8 /* Pods-stabvideo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -557,11 +729,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		8000995DA02063BF3777393CD52061DD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -702,6 +873,45 @@
 			};
 			name = Release;
 		};
+		BFAA2437989E518F26AFD6EF8DE7C259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FD3AE6B246EC07A6EB818C92AA4648B /* Pods-stabvideo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-stabvideo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stabvideo/Pods-stabvideo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C43E340DFF7E85EDE8B330DB2C6D4D79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A02E52BE1CB40AC95B2AA2FB14C6ABA /* Pods-stabvideoTests.release.xcconfig */;
@@ -741,9 +951,54 @@
 			};
 			name = Release;
 		};
+		CA91F46982C3D69494E75B3B83E866D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0C16E2B2E94D01B834DF6BF4D69C8F /* IHProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IHProgressHUD/IHProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IHProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IHProgressHUD/IHProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = IHProgressHUD;
+				PRODUCT_NAME = IHProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		12FD106292D1C19C163584AF5B793D29 /* Build configuration list for PBXNativeTarget "IHProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138831867CF54DA95C092385244F0A52 /* Debug */,
+				CA91F46982C3D69494E75B3B83E866D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -753,11 +1008,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4417B760904123F2A747E40485F2C245 /* Build configuration list for PBXNativeTarget "Pods-stabvideo" */ = {
+		3282EA0E7A45B37F0C88E4C78C9698D4 /* Build configuration list for PBXNativeTarget "Pods-stabvideo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				092D16D90F86CB3A68E7F8D37360C95C /* Debug */,
-				35BFF49C87555CF063DBD5EF4712D9B0 /* Release */,
+				7D19900C3ECABE9D79F9CF89F1E6D962 /* Debug */,
+				BFAA2437989E518F26AFD6EF8DE7C259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

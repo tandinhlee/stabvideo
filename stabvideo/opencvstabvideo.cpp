@@ -14,7 +14,6 @@
 
 // This video stablisation smooths the global trajectory using a sliding average window
 
-const int SMOOTHING_RADIUS = 30; // In frames. The larger the more stable the video, but less reactive to sudden panning
 const int BORDER_CROP = 64; // In pixels. Crops the border to reduce the black borders from stabilisation being too noticeable.
 
 // 1. Get previous to current frame transformation (dx, dy, da) for all frames
@@ -50,6 +49,10 @@ struct Trajectory
     double y;
     double a; // angle
 };
+opencvstabvideo::opencvstabvideo(float radius, float fps){
+    msRadius = radius;
+    mfps = fps;
+}
 
 vector<Mat> opencvstabvideo::stablelize(vector<Mat> videoArray)
 {
@@ -61,7 +64,7 @@ vector<Mat> opencvstabvideo::stablelize(vector<Mat> videoArray)
     
 //    VideoCapture cap(fileUrl);
 //    assert(cap.isOpened());
-    
+    int smoothingRadius =(int)mfps*msRadius/1000;
     Mat cur, cur_grey;
     Mat prev, prev_grey;
     prev = videoArray.at(0);
@@ -153,7 +156,7 @@ vector<Mat> opencvstabvideo::stablelize(vector<Mat> videoArray)
         double sum_a = 0;
         int count = 0;
         
-        for(int j=-SMOOTHING_RADIUS; j <= SMOOTHING_RADIUS; j++) {
+        for(int j=-smoothingRadius; j <= smoothingRadius; j++) {
             if(i+j >= 0 && i+j < trajectory.size()) {
                 sum_x += trajectory[i+j].x;
                 sum_y += trajectory[i+j].y;

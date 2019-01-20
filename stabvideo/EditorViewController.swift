@@ -8,20 +8,40 @@
 
 import UIKit
 import Photos
+import IHProgressHUD
 
 class EditorViewController: UIViewController {
     var selectedVideo: PHAsset!
+    var radiusValue:Float = 500
+    @IBOutlet weak var radiusLabel: UILabel!
+    @IBOutlet weak var slider: UISlider!
+    @IBAction func valueChange(_ sender: UISlider) {
+        let newValue = sender.value
+        radiusValue = newValue
+        radiusLabel.text = String.localizedStringWithFormat("%.0f", radiusValue);
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
+        slider.minimumValue = 200;
+        slider.maximumValue = 2000;
+        slider.value = radiusValue;
+        radiusLabel.text = String.localizedStringWithFormat("%.0f", radiusValue);
         // Do any additional setup after loading the view.
     }
     
     @IBAction func startStabilization(_ sender: Any) {
         // HAVE URL NOW
         let ocwrapper = OpenCVWrapper()
-        ocwrapper.stabilizationVideo(selectedVideo!)
+        IHProgressHUD.show(withStatus: "Stabilization in progress")
+        ocwrapper.stabilizationVideo(selectedVideo,withRadiusMS: radiusValue) { (isSuccess) in
+            if isSuccess {
+                IHProgressHUD.dismiss()
+                IHProgressHUD.showSuccesswithStatus("Success to stabilize video. \nPlease check new video in photo library.")
+            } else {
+                IHProgressHUD.dismiss()
+                IHProgressHUD.showError(withStatus: "Fail to stabilize video.")
+            }
+        }
         
     }
     /*

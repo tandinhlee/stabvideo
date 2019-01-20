@@ -15,8 +15,12 @@
 using namespace std;
 using namespace cv;
 class opencvstabvideo {
+private:
+    float msRadius;
+    float mfps;
 public:
     vector<Mat> stablelize(vector<Mat> videoArray);
+    opencvstabvideo(float radius, float fps);
 };
 
 #endif /* opencvstabvideo_hpp */

@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OpenCVWrapper : NSObject
-- (void) stabilizationVideo:(PHAsset *) sourceVideo;
+- (void) stabilizationVideo:(PHAsset *) sourceVideo withRadiusMS:(float) msRadius completeHandler:(void (^)(BOOL isSucess))handler;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -89,7 +89,7 @@ using namespace std;
     
     return pxbuffer;
 }
--(void) writeImageAsMovie:(NSArray *)array toPath:(NSString*)path size:(CGSize)size withFPS:(CGFloat) fps
+-(void) writeImageAsMovie:(NSArray *)array toPath:(NSString*)path size:(CGSize)size withFPS:(CGFloat) fps completeHandler:(void (^)(BOOL isSucess))handler;
 {
     CGFloat targetWidth = 0;
     do {
@@ -187,15 +187,14 @@ using namespace std;
                             if (success) {
                                 dispatch_async(dispatch_get_main_queue(), ^{
                                     NSLog(@"Video writing succeeded.");
-//                                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Success" message:@"Your video was successfully saved" preferredStyle:UIAlertControllerStyleAlert];
-//
-//                                    [self presentViewController:alert animated:YES completion:nil];
                                 });
                             }
                         }];
+                        handler(YES);
                     } else
                     {
                         NSLog(@"Video writing failed: %@", videoWriter.error);
+                        handler(NO);
                     }
                     
                 }]; // end videoWriter finishWriting Block
@@ -231,7 +230,7 @@ using namespace std;
     return cvMat;
 }
 
-- (void) stabilizationVideo:(PHAsset *) sourceVideo{
+- (void) stabilizationVideo:(PHAsset *) sourceVideo withRadiusMS:(float) msRadius completeHandler:(void (^)(BOOL isSucess))handler{
     //    opencvstabvideo *ovstabvideo = new opencvstabvideo;
     //    string url = ovstabvideo->stablelize([sourceVideoUrlString UTF8String]);
     //    NSString * result = [[NSString alloc] initWithUTF8String:url.c_str()];
@@ -263,7 +262,7 @@ using namespace std;
             videoMatArray.push_back(cvMat);
             CGImageRelease(imageframe);
         }
-        opencvstabvideo *ovstabvideo = new opencvstabvideo;
+        opencvstabvideo *ovstabvideo = new opencvstabvideo(msRadius,fps);
         vector<cv::Mat> outputArray = ovstabvideo->stablelize(videoMatArray);
         NSMutableArray *imageOutputArray = [[NSMutableArray alloc] init];
         for (int i = 0; i < outputArray.size(); i++){
@@ -276,7 +275,7 @@ using namespace std;
         [formatter setDateFormat:@"ddmmyyyhhmmss"];
         NSString *stringFromDate = [formatter stringFromDate:[NSDate date]];
         NSString *fullPathVideo = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"stabilized_%@.mov",stringFromDate]];
-        [self writeImageAsMovie:imageOutputArray toPath:fullPathVideo size:[(UIImage *)[imageOutputArray firstObject] size] withFPS:fps];
+        [self writeImageAsMovie:imageOutputArray toPath:fullPathVideo size:[(UIImage *)[imageOutputArray firstObject] size] withFPS:fps completeHandler:handler];
     }];
 }
 @end

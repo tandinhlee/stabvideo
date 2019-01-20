@@ -8,6 +8,7 @@
 
 import UIKit
 import Photos
+import IHProgressHUD
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -26,6 +27,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     @IBAction func startLoadVideo(_ sender: Any) {
+        IHProgressHUD.show(withStatus: "Loading video from library")
         getAssetFromPhoto()
     }
     
@@ -36,6 +38,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         options.predicate = NSPredicate(format: "mediaType = %d", PHAssetMediaType.video.rawValue)
         videos = PHAsset.fetchAssets(with: options)
         collectionView.reloadData()
+        IHProgressHUD.dismiss()
     }
     // MARK: UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

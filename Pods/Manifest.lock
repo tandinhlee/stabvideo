@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 478abadfb9b7b3dc0d6ebcef7bbf760f15696b1d
+PODS:
+  - IHProgressHUD (0.1.4)
+
+DEPENDENCIES:
+  - IHProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IHProgressHUD
+
+SPEC CHECKSUMS:
+  IHProgressHUD: a01846bfbb581c761c79747c67b08387c3bdfae3
+
+PODFILE CHECKSUM: 8e4f45b209fa98e1542de830365c1b6ed8f12ef6
 
 COCOAPODS: 1.5.3
