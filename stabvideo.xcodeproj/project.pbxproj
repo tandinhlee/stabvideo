@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,10 +12,10 @@
 		0D11D77321F151DE0039C083 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D11D77221F151DE0039C083 /* Accelerate.framework */; };
 		0D11D77521F151ED0039C083 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D11D77421F151ED0039C083 /* CoreMedia.framework */; };
 		0D11D77721F151FE0039C083 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D11D77621F151FE0039C083 /* CoreFoundation.framework */; };
-		0D11D77921F1520C0039C083 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D11D77821F1520C0039C083 /* AssetsLibrary.framework */; };
 		0D11D77B21F1521E0039C083 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D11D77A21F1521E0039C083 /* CoreVideo.framework */; };
 		0D11D77F21F152490039C083 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D11D77E21F152490039C083 /* OpenCVWrapper.mm */; };
 		0D11D78221F2502B0039C083 /* opencvstabvideo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D11D78021F2502B0039C083 /* opencvstabvideo.cpp */; };
+		0D7A9AC82639A33000826A9A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7A9AC72639A33000826A9A /* Photos.framework */; };
 		0D8352A821F14A8B00CCDD1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8352A721F14A8B00CCDD1F /* AppDelegate.swift */; };
 		0D8352AA21F14A8B00CCDD1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8352A921F14A8B00CCDD1F /* ViewController.swift */; };
 		0D8352AD21F14A8B00CCDD1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8352AB21F14A8B00CCDD1F /* Main.storyboard */; };
@@ -62,6 +62,7 @@
 		0D11D78021F2502B0039C083 /* opencvstabvideo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = opencvstabvideo.cpp; sourceTree = "<group>"; };
 		0D11D78121F2502B0039C083 /* opencvstabvideo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = opencvstabvideo.hpp; sourceTree = "<group>"; };
 		0D124F0C21F303A30082BE8F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0D7A9AC72639A33000826A9A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		0D8352A421F14A8B00CCDD1F /* stabvideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stabvideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8352A721F14A8B00CCDD1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D8352A921F14A8B00CCDD1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D11D77B21F1521E0039C083 /* CoreVideo.framework in Frameworks */,
-				0D11D77921F1520C0039C083 /* AssetsLibrary.framework in Frameworks */,
+				0D7A9AC82639A33000826A9A /* Photos.framework in Frameworks */,
 				0D11D77721F151FE0039C083 /* CoreFoundation.framework in Frameworks */,
 				0D11D77521F151ED0039C083 /* CoreMedia.framework in Frameworks */,
 				0D11D77321F151DE0039C083 /* Accelerate.framework in Frameworks */,
@@ -186,6 +187,7 @@
 		743F4B4AF0E57EBA975C1B60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D7A9AC72639A33000826A9A /* Photos.framework */,
 				0D11D77A21F1521E0039C083 /* CoreVideo.framework */,
 				0D11D77821F1520C0039C083 /* AssetsLibrary.framework */,
 				0D11D77621F151FE0039C083 /* CoreFoundation.framework */,
@@ -280,19 +282,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Dinh Le";
 				TargetAttributes = {
 					0D8352A321F14A8B00CCDD1F = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1250;
 					};
 					0D8352B721F14A8C00CCDD1F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = 0D8352A321F14A8B00CCDD1F;
 					};
 					0D8352C221F14A8C00CCDD1F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = 0D8352A321F14A8B00CCDD1F;
 					};
 				};
@@ -417,20 +421,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-stabvideo/Pods-stabvideo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IHProgressHUD/IHProgressHUD.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-stabvideo/Pods-stabvideo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHProgressHUD.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-stabvideo/Pods-stabvideo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stabvideo/Pods-stabvideo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stabvideo/Pods-stabvideo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -526,6 +525,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -587,6 +587,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -639,7 +640,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "stabvideo/stabvideo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -666,7 +667,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "stabvideo/stabvideo-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -686,7 +687,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stabvideo.app/stabvideo";
 			};
@@ -707,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stabvideo.app/stabvideo";
 			};
@@ -727,7 +728,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = stabvideo;
 			};
@@ -747,7 +748,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tandinhlee.stabvideoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = stabvideo;
 			};
